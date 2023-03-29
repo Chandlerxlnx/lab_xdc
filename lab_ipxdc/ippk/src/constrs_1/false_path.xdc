@@ -1,2 +1,2 @@
 
-set_false_path -from [get_clocks clk_rx] -to [get_clocks clk_tx]
+set_false_path -from [get_clocks -of [get_ports clk_rx]] -to [get_clocks -of [get_ports clk_tx]]

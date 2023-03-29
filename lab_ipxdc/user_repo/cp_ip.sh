@@ -1,3 +1,4 @@
-cp ../*.zip .
+cp ../ippk/*.zip .
+
 mkdir sync_ff
-unzip *.zip
+unzip *.zip -d sync_ff
