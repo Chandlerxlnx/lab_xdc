@@ -14,8 +14,9 @@ The order in which IP XDC files could be processed are, as follows:
 ## how to set false path in IP constraint
 
 the normal falsepath is from clock to clock. but the clock name in IP might not be same as top design. the constraints will disapear when `get_clock` return null.
-*to walk around* the clock can be gotten with command
+*to walk around* need change the methods to get clock in IP constraint.the clock can be gotten with command
 ```TCL
+  #example of IP false_path constraints
   set_false_path -from [get_clocks -of_object [get_ports src_clk_port]] \
        -to [get_clocks -of_object [get_ports dest_clk_port]]
 ```
