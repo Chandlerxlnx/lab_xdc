@@ -18,3 +18,4 @@ proc jtag_wr {data offset {base 0x44000000}} {
    set rd_report [report_hw_axi_txn wr_txn -w 32]
    return $rd_report
 }
+
